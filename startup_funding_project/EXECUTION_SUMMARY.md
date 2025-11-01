@@ -1,13 +1,13 @@
-# 📊 Indian Startup Funding Analysis - Execution Summary (Simplified)
+# Indian Startup Funding Analysis - Execution Summary (Simplified)
 
 **Date:** November 1, 2025  
 **Project:** Predictive Analysis of Indian Startup Funding Dynamics (2015-2020)  
 **Scope:** 2nd-Year BTech Mini-Project  
-**Status:** ✅ **COMPLETE**
+**Status:** **COMPLETE**
 
 ---
 
-## 🎯 Executive Summary
+## Executive Summary
 
 Analyzed **3,036 Indian startup funding records** from 2015-2020 using a simplified machine learning pipeline. Built regression models to predict funding amounts using core features: stage, geography, industry, and investor count.
 
@@ -15,7 +15,7 @@ Analyzed **3,036 Indian startup funding records** from 2015-2020 using a simplif
 
 ---
 
-## 📚 Project Pipeline
+## Project Pipeline
 
 ### Phase 1: Data Loading
 - **Source:** `startup_funding.csv` (3,044 rows × 10 columns)
@@ -61,20 +61,20 @@ Analyzed **3,036 Indian startup funding records** from 2015-2020 using a simplif
 
 **Models Evaluated:**
 1. **Linear Regression (Baseline)**
-2. **Random Forest Regressor** ⭐ (Best Model)
+2. **Random Forest Regressor** (Best Model)
 
 **Data Split:** 80% train (2,429 samples) / 20% test (608 samples)
 
 ---
 
-## 📊 Model Results
+## Model Results
 
 ### Performance Comparison
 
 | Model | Train R² | Test R² | RMSE | MAE |
 |-------|----------|---------|------|-----|
 | Linear Regression | 0.5269 | 0.5567 | 1.34 | 0.85 |
-| **Random Forest** ⭐ | **0.6351** | **0.5838** | **1.30** | **0.83** |
+| **Random Forest** | **0.6351** | **0.5838** | **1.30** | **0.83** |
 
 **Winner:** Random Forest (+5% improvement in R² over Linear Regression)
 
@@ -95,7 +95,7 @@ Analyzed **3,036 Indian startup funding records** from 2015-2020 using a simplif
 
 ---
 
-## 🔑 Key Findings
+## Key Findings
 
 ### 1. **Stage is the Overwhelmingly Dominant Factor**
 - **82% of model's predictive power** comes from `Stage_Order` alone
@@ -120,7 +120,7 @@ Analyzed **3,036 Indian startup funding records** from 2015-2020 using a simplif
 - **Implication:** Stage and timing matter more than location/sector
 - Accounts for ~68% of predictive power
 - Clear exponential relationship: each stage averages 3-5× previous stage
-- **Seed:** ₹35 Lakhs | **Series A:** ₹8.5 Cr | **Series C:** ₹75 Cr
+- **Seed:** Rs.35 Lakhs | **Series A:** Rs.8.5 Cr | **Series C:** Rs.75 Cr
 
 ### 2. **Temporal Trends Matter**
 - Year accounts for 7% of importance
@@ -144,7 +144,7 @@ Analyzed **3,036 Indian startup funding records** from 2015-2020 using a simplif
 
 ---
 
-## 🎯 Model Limitations
+## Model Limitations
 
 ### 1. **R² = 0.58 (Moderate Explanatory Power)**
 - Model explains 58% of funding variance - good but not perfect
@@ -173,13 +173,13 @@ Analyzed **3,036 Indian startup funding records** from 2015-2020 using a simplif
 - Recent trends (2021-2024) not captured
 
 ### 5. **Residual Patterns**
-- Model struggles with extreme outliers (mega-deals >₹500 Cr)
+- Model struggles with extreme outliers (mega-deals >Rs.500 Cr)
 - Prediction errors distributed approximately normally
 - Log transformation successfully normalized the distribution
 
 ---
 
-## 💡 Business Recommendations
+## Business Recommendations
 
 ### For Startups:
 1. **Focus on Stage Progression:** Reaching next stage = 3-5× funding increase (82% of prediction!)
@@ -195,7 +195,7 @@ Analyzed **3,036 Indian startup funding records** from 2015-2020 using a simplif
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 ### Data Collection:
 - **More Recent Data:** 2021-2024 records (post-pandemic trends)
@@ -216,7 +216,7 @@ Analyzed **3,036 Indian startup funding records** from 2015-2020 using a simplif
 
 ---
 
-## 📁 Outputs Generated
+## Outputs Generated
 
 ### Data Files:
 - `data/startup_funding_clean.csv` (3,036 rows, 18 columns)
@@ -241,7 +241,7 @@ Analyzed **3,036 Indian startup funding records** from 2015-2020 using a simplif
 
 ---
 
-## ✅ Project Completion Checklist
+## Project Completion Checklist
 
 - [x] Data loading and inspection
 - [x] Data cleaning and transformation
@@ -254,11 +254,11 @@ Analyzed **3,036 Indian startup funding records** from 2015-2020 using a simplif
 - [x] Documentation (3 comprehensive docs)
 - [x] Model persistence (saved .pkl files)
 
-**Status:** 100% Complete ✅
+**Status:** 100% Complete
 
 ---
 
-## 📝 Conclusion
+## Conclusion
 
 This project successfully demonstrates a complete machine learning pipeline for Indian startup funding prediction using 2nd-year BTech-appropriate methods:
 

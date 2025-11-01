@@ -1,11 +1,11 @@
-# 🎯 Key Inferences - Quick Reference Guide
+# Key Inferences - Quick Reference Guide
 
-## 📊 Top-Line Findings
+## Top-Line Findings
 
 ### Regression (Amount Prediction)
 - **Best Model:** Random Forest (R²=0.584, RMSE=1.30, MAE=0.83)
 - **#1 Predictor:** Stage_Order (81.8% importance) - **OVERWHELMING DOMINANCE**
-- **Key Pattern:** Exponential growth from Seed (₹50L avg) to Series D+ (₹50+ Cr)
+- **Key Pattern:** Exponential growth from Seed (Rs.50L avg) to Series D+ (Rs.50+ Cr)
 - **Performance:** Model explains 58% of variance - strong predictive power
 
 ### Simplified Approach (2nd-Year BTech Project)
@@ -15,7 +15,7 @@
 
 ---
 
-## 💰 Funding Amount Drivers (Feature Importance Analysis)
+## Funding Amount Drivers (Feature Importance Analysis)
 
 ### Top 5 Factors that Increase Funding:
 
@@ -27,8 +27,8 @@
 
 2. **Recent Years** (7.2% importance)
    - Funding ecosystem matured from 2015 to 2020
-   - 2015 avg: ₹2.5 Cr
-   - 2020 avg: ₹5+ Cr
+   - 2015 avg: Rs.2.5 Cr
+   - 2020 avg: Rs.5+ Cr
    - **Actionable:** Ecosystem maturity benefits all startups
 
 3. **Month/Quarter** (4.2% + 0.8% importance)
@@ -38,54 +38,54 @@
 
 4. **Metro Cities** (2.5% importance)
    - Metro presence (Bangalore, Mumbai, Delhi) helps
-   - Metro avg: ₹5 Cr
-   - Tier-2 avg: ₹1.5 Cr
+   - Metro avg: Rs.5 Cr
+   - Tier-2 avg: Rs.1.5 Cr
    - **Actionable:** Location matters but isn't dominant
 
 5. **Investor Count** (1.6% importance)
    - Multiple investors correlate with validation
-   - 1 investor: ₹1-2 Cr
-   - 5+ investors: ₹10+ Cr
+   - 1 investor: Rs.1-2 Cr
+   - 5+ investors: Rs.10+ Cr
    - **Actionable:** Build investor syndicate for credibility
 
 ---
 
-## 💵 Typical Funding Amounts by Stage
+## Typical Funding Amounts by Stage
 
 ### Amount Ranges Observed:
 
 | Stage | Typical Amount Range | Investor Count | Sample Size |
 |-------|---------------------|----------------|-------------|
-| **Seed** | ₹5-50 Lakhs | 1-2 | ~1500 records |
-| **Angel** | ₹20L-2 Cr | 1-3 | Limited data |
-| **Pre-Series A** | ₹1-5 Cr | 2-4 | ~800 records |
-| **Series A** | ₹2-15 Cr | 3-7 | ~600 records |
-| **Series B** | ₹10-50 Cr | 5-10 | ~100 records |
-| **Series C+** | ₹50+ Cr | 7-15 | Limited data |
+| **Seed** | Rs.5-50 Lakhs | 1-2 | ~1500 records |
+| **Angel** | Rs.20L-2 Cr | 1-3 | Limited data |
+| **Pre-Series A** | Rs.1-5 Cr | 2-4 | ~800 records |
+| **Series A** | Rs.2-15 Cr | 3-7 | ~600 records |
+| **Series B** | Rs.10-50 Cr | 5-10 | ~100 records |
+| **Series C+** | Rs.50+ Cr | 7-15 | Limited data |
 
 ### Model Predictions:
-- ✅ **Accurate predictions** for well-represented stages (Seed, Pre-Series A, Series A)
-- ✅ **R² = 0.58** indicates strong correlation between features and amounts
-- ⚠️ **Less accurate** for rare stages with limited data (Series D+, Debt, etc.)
+- **Accurate predictions** for well-represented stages (Seed, Pre-Series A, Series A)
+- **R² = 0.58** indicates strong correlation between features and amounts
+- **Less accurate** for rare stages with limited data (Series D+, Debt, etc.)
 
 ---
 
-## 🚀 Actionable Recommendations
+## Actionable Recommendations
 
 ### For Startups Seeking Funding:
 
 #### **Immediate Actions:**
-1. ✅ **Define Clear Stage Milestones**
+1. **Define Clear Stage Milestones**
    - Revenue targets (10-100-1000 rule)
    - User growth (10K → 100K → 1M)
    - Product readiness (MVP → Beta → GA)
 
-2. ✅ **Build Investor Pipeline**
+2. **Build Investor Pipeline**
    - Target 3-5 lead investors per round
    - Syndication reduces individual risk
    - Signals market validation
 
-3. ✅ **Optimize Timing**
+3. **Optimize Timing**
    - Raise when metrics show 3-month runway
    - Q4/Q1 historically active periods
    - Ecosystem trends favor tech/fintech
@@ -102,17 +102,17 @@
 #### **Investment Criteria Checklist:**
 
 **High-Confidence Signals (+):**
-- ✅ Stage-appropriate amount (₹5-15Cr for Series A)
-- ✅ Syndication with 3-5 other investors
-- ✅ Metro-based or remote-capable team
-- ✅ Clear progression path to next stage
-- ✅ Consistent with historical patterns (Stage_Order is dominant predictor)
+- Stage-appropriate amount (Rs.5-15Cr for Series A)
+- Syndication with 3-5 other investors
+- Metro-based or remote-capable team
+- Clear progression path to next stage
+- Consistent with historical patterns (Stage_Order is dominant predictor)
 
 **Red Flags (-):**
-- ❌ Amount mismatched to stage (₹50Cr at Seed, ₹50L at Series B)
-- ❌ Solo investor (no validation from syndication)
-- ❌ No clear milestones for next stage
-- ❌ Outlier amounts suggest unrealistic expectations
+- Amount mismatched to stage (Rs.50Cr at Seed, Rs.50L at Series B)
+- Solo investor (no validation from syndication)
+- No clear milestones for next stage
+- Outlier amounts suggest unrealistic expectations
 
 #### **Portfolio Strategy:**
 - **70% allocation:** Series A/B (proven traction)
@@ -121,7 +121,7 @@
 
 ---
 
-## 📈 Model Performance Summary
+## Model Performance Summary
 
 ### Regression (Can we predict funding amount?)
 
@@ -153,9 +153,9 @@
 
 ### 2. **Exponential Stage Growth**
 - Each stage is ~3-5× previous stage
-- Series A: ₹5 Cr
-- Series B: ₹15 Cr  
-- Series C: ₹50 Cr
+- Series A: Rs.5 Cr
+- Series B: Rs.15 Cr  
+- Series C: Rs.50 Cr
 - **Implication:** Hypergrowth is expected, not exceptional
 
 ### 3. **Year Effect is Real**
@@ -165,9 +165,9 @@
 - **Implication:** Raising capital became easier as ecosystem matured
 
 ### 4. **Investor Syndication Matters**
-- 1 investor: ₹1-2 Cr
-- 3 investors: ₹5-7 Cr
-- 5+ investors: ₹10+ Cr
+- 1 investor: Rs.1-2 Cr
+- 3 investors: Rs.5-7 Cr
+- 5+ investors: Rs.10+ Cr
 - **Implication:** Build consortium, not single champions
 
 ### 5. **Geography is Destiny (Somewhat)**

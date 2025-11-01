@@ -1,4 +1,4 @@
-# 🧪 Model Testing Guide
+#  Model Testing Guide
 
 ## Quick Start
 
@@ -220,13 +220,13 @@ amount_crores = actual_amount / 10_000_000
 
 ## Tips for Best Results
 
-### ✅ DO:
+###  DO:
 - Use realistic combinations (e.g., Series C in metro cities)
 - Test with Stage_Order values 2-9 (most common)
 - Expect exponential growth by stage
 - Remember predictions are probabilistic (not exact)
 
-### ❌ DON'T:
+###  DON'T:
 - Use extreme/invalid combinations (e.g., Angel round with 10 investors)
 - Expect precision beyond ±50% (funding is inherently variable)
 - Use for data outside 2015-2020 (model trained on this period)

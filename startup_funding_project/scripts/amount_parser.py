@@ -137,7 +137,7 @@ if __name__ == "__main__":
         ("undisclosed", np.nan, np.nan, np.nan),
     ]
     
-    print("🧪 Running Amount Parser Tests...\n")
+    print(" Running Amount Parser Tests...\n")
     passed = 0
     failed = 0
     
@@ -149,17 +149,17 @@ if __name__ == "__main__":
         # Handle NaN comparison
         if pd.isna(expected_inr):
             if pd.isna(inr) and pd.isna(lakhs) and pd.isna(crores):
-                print(f"✅ PASS: '{inp}' → NaN")
+                print(f" PASS: '{inp}' → NaN")
                 passed += 1
             else:
-                print(f"❌ FAIL: '{inp}' → Expected NaN, Got ({inr}, {lakhs}, {crores})")
+                print(f" FAIL: '{inp}' → Expected NaN, Got ({inr}, {lakhs}, {crores})")
                 failed += 1
         else:
             if abs(inr - expected_inr) < 0.01 and abs(lakhs - expected_lakhs) < 0.01 and abs(crores - expected_crores) < 0.01:
-                print(f"✅ PASS: '{inp}' → ₹{inr:,.0f} ({lakhs:.2f}L / {crores:.2f}Cr)")
+                print(f" PASS: '{inp}' → ₹{inr:,.0f} ({lakhs:.2f}L / {crores:.2f}Cr)")
                 passed += 1
             else:
-                print(f"❌ FAIL: '{inp}' → Expected ({expected_inr}, {expected_lakhs}, {expected_crores}), Got ({inr}, {lakhs}, {crores})")
+                print(f" FAIL: '{inp}' → Expected ({expected_inr}, {expected_lakhs}, {expected_crores}), Got ({inr}, {lakhs}, {crores})")
                 failed += 1
     
-    print(f"\n📊 Test Results: {passed} passed, {failed} failed")
+    print(f"\n Test Results: {passed} passed, {failed} failed")

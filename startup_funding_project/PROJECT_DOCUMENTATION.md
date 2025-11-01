@@ -1,4 +1,4 @@
-# 📊 Project Documentation: Indian Startup Funding Analysis
+# Project Documentation: Indian Startup Funding Analysis
 
 **Project Title:** Predictive Analysis of Indian Startup Funding Dynamics (2015-2020)  
 **Author:** Rohit & Team  
@@ -8,7 +8,7 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 1. [Project Overview](#project-overview)
 2. [Dataset Overview](#dataset-overview)
 3. [Methodology Summary](#methodology-summary)
@@ -19,24 +19,24 @@
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 ### Objective
 Build predictive models to analyze Indian startup funding patterns from 2015-2020, identifying key factors influencing investment amounts.
 
 ### Key Goals
-- ✅ Clean and standardize 3,036 startup funding records
-- ✅ Extract insights through exploratory data analysis
-- ✅ Engineer 8 core features for machine learning
-- ✅ Build regression models (Linear Regression + Random Forest)
-- ✅ Identify key drivers of funding through feature importance
+- Clean and standardize 3,036 startup funding records
+- Extract insights through exploratory data analysis
+- Engineer 8 core features for machine learning
+- Build regression models (Linear Regression + Random Forest)
+- Identify key drivers of funding through feature importance
 
 ### Scope
 **2nd-Year BTech Mini-Project** - Simplified ML pipeline with educational focus on core concepts.
 
 ---
 
-## 📊 Dataset Overview
+## Dataset Overview
 
 ### Source Data
 - **Source:** Indian Startup Funding Dataset (2015-2020)
@@ -99,7 +99,7 @@ Build predictive models to analyze Indian startup funding patterns from 2015-202
 1. **Geographic Concentration:** Bangalore (29%), Mumbai (19%), Delhi (14%) = 62% of funding
 2. **Industry Dominance:** E-commerce (23%), Fintech (18%), Technology (15%) = 56% of funding
 3. **Temporal Growth:** 3× funding increase from 2015 to 2020
-4. **Stage Distribution:** Exponential growth pattern (Seed: ₹35L → Series C: ₹75Cr)
+4. **Stage Distribution:** Exponential growth pattern (Seed: Rs.35L → Series C: Rs.75Cr)
 5. **Investor Patterns:** 42% single investor, 35% syndicated (2-3 investors)
 
 **Visualizations Created (6 plots):**
@@ -122,10 +122,10 @@ Build predictive models to analyze Indian startup funding patterns from 2015-202
 5. **Industry:** Industry_Category_Encoded (10 categories = 0-9)
 
 **Simplifications Applied:**
-- ✅ No cyclical encoding (Month/Quarter as integers, not sin/cos)
-- ✅ No interaction features (Stage×City, etc.)
-- ✅ Simple label encoding (not one-hot)
-- ✅ Stage-wise median imputation
+- No cyclical encoding (Month/Quarter as integers, not sin/cos)
+- No interaction features (Stage×City, etc.)
+- Simple label encoding (not one-hot)
+- Stage-wise median imputation
 
 **Output:** `data/processed_features.csv` (3,036 rows × 40 columns)
 
@@ -134,7 +134,7 @@ Build predictive models to analyze Indian startup funding patterns from 2015-202
 
 **Models Evaluated:**
 1. **Linear Regression (Baseline)**
-2. **Random Forest Regressor** ⭐ (Best)
+2. **Random Forest Regressor** (Best)
 
 **Data Split:** 80% train (2,429 samples) / 20% test (608 samples)
 
@@ -146,14 +146,14 @@ Build predictive models to analyze Indian startup funding patterns from 2015-202
 
 ---
 
-## 📈 Results
+## Results
 
 ### Model Performance Comparison
 
 | Model | Train R² | Test R² | RMSE | MAE |
 |-------|----------|---------|------|-----|
 | Linear Regression | 0.5269 | 0.5567 | 1.34 | 0.85 |
-| **Random Forest** ⭐ | **0.6351** | **0.5838** | **1.30** | **0.83** |
+| **Random Forest** (Best) | **0.6351** | **0.5838** | **1.30** | **0.83** |
 
 **Winner:** Random Forest (explains 58% of variance vs 56% for Linear Regression)
 
@@ -187,19 +187,19 @@ Build predictive models to analyze Indian startup funding patterns from 2015-202
 
 ---
 
-## 💡 Key Insights
+## Key Insights
 
 ### 1. **Stage Progression Overwhelmingly Dominates Funding** (82% importance)
 - Each funding stage shows exponential growth:
-  - **Seed:** ₹35 Lakhs average
-  - **Series A:** ₹8.5 Crores average (24× increase)
-  - **Series C:** ₹75 Crores average (9× increase from A)
+  - **Seed:** Rs. 35 Lakhs average
+  - **Series A:** Rs. 8.5 Crores average (24× increase)
+  - **Series C:** Rs. 75 Crores average (9× increase from A)
 - Stage-to-stage progression = 3-5× funding increase
 - **Actionable:** Startups should focus on reaching next milestone stage
 
 ### 2. **Temporal Trends Show Ecosystem Maturity** (7.2% importance)
 - Average funding increased 15-20% annually (2015-2020)
-- 2015 average: ₹2.5 Cr → 2020 average: ₹5+ Cr
+- 2015 average: Rs.2.5 Cr → 2020 average: Rs.5+ Cr
 - Indicates growing investor confidence and market expansion
 - **Actionable:** Later-year valuations naturally higher
 
@@ -217,9 +217,9 @@ Build predictive models to analyze Indian startup funding patterns from 2015-202
 - **Actionable:** Metro presence helps but isn't deterministic
 
 ### 5. **Investor Syndication Has Small Effect** (1.6% importance)
-- Single investor deals: ₹3 Cr average
-- 2-3 investor deals: ₹4.5 Cr average (50% higher)
-- 4+ investor deals: ₹6 Cr average
+- Single investor deals: Rs.3 Cr average
+- 2-3 investor deals: Rs.4.5 Cr average (50% higher)
+- 4+ investor deals: Rs.6 Cr average
 - Effect is small in model (1.6% importance)
 - **Actionable:** Syndication helps validation but isn't primary driver
 
@@ -232,7 +232,7 @@ Build predictive models to analyze Indian startup funding patterns from 2015-202
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 ### 1. **Moderate Explanatory Power (R² = 0.58)**
 **Missing Features:**
@@ -278,7 +278,7 @@ Build predictive models to analyze Indian startup funding patterns from 2015-202
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 ### Data Collection
 1. **More Recent Data:** 2021-2024 records (post-pandemic, unicorn boom)
@@ -314,7 +314,7 @@ Build predictive models to analyze Indian startup funding patterns from 2015-202
 
 ---
 
-## 📚 References
+## References
 
 ### Documentation Files
 For detailed information, refer to:
@@ -333,17 +333,17 @@ For detailed information, refer to:
 
 ---
 
-## ✅ Project Completion Summary
+## Project Completion Summary
 
-**Status:** 100% Complete ✅
+**Status:** 100% Complete
 
 **Deliverables:**
-- ✅ Cleaned dataset (3,036 records)
-- ✅ 6 EDA visualizations
-- ✅ 8 engineered features
-- ✅ 2 trained models (Linear + Random Forest)
-- ✅ Feature importance analysis
-- ✅ Comprehensive documentation (4 markdown files)
+- Cleaned dataset (3,036 records)
+- 6 EDA visualizations
+- 8 engineered features
+- 2 trained models (Linear + Random Forest)
+- Feature importance analysis
+- Comprehensive documentation (4 markdown files)
 
 **Key Achievement:**
 Built complete ML pipeline achieving **R² = 0.58** with interpretable Random Forest model, identifying **stage progression as overwhelmingly dominant funding driver (82% importance)**.

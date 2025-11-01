@@ -4,7 +4,7 @@
 
 ---
 
-## 📊 Stage Progression & Numerical Ordering
+##  Stage Progression & Numerical Ordering
 
 The following table defines the canonical funding stages with numerical ordering for modeling:
 
@@ -32,7 +32,7 @@ The following table defines the canonical funding stages with numerical ordering
 
 ---
 
-## 🔍 Mapping Rules
+##  Mapping Rules
 
 ### Pattern Matching Logic
 
@@ -127,7 +127,7 @@ def map_investment_type(inv_type: str) -> tuple[str, int]:
 
 ---
 
-## 📝 Implementation Notes
+##  Implementation Notes
 
 1. **Normalize first**: Convert to lowercase, strip whitespace
 2. **Order matters**: Check specific patterns (Pre-Seed) before general ones (Seed)
@@ -137,7 +137,7 @@ def map_investment_type(inv_type: str) -> tuple[str, int]:
 
 ---
 
-## 🎯 Usage in Notebooks
+##  Usage in Notebooks
 
 **In `notebooks/2_data_cleaning.ipynb`:**
 

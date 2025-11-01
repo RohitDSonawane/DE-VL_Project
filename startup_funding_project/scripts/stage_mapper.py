@@ -135,17 +135,17 @@ if __name__ == "__main__":
         ("Venture", "Other", -1),
     ]
     
-    print("🧪 Running Stage Mapper Tests...\n")
+    print(" Running Stage Mapper Tests...\n")
     passed = 0
     failed = 0
     
     for inp, expected_stage, expected_order in test_cases:
         stage, order = map_investment_type(inp)
         if stage == expected_stage and order == expected_order:
-            print(f"✅ PASS: '{inp}' → ({stage}, {order})")
+            print(f" PASS: '{inp}' → ({stage}, {order})")
             passed += 1
         else:
-            print(f"❌ FAIL: '{inp}' → Expected ({expected_stage}, {expected_order}), Got ({stage}, {order})")
+            print(f" FAIL: '{inp}' → Expected ({expected_stage}, {expected_order}), Got ({stage}, {order})")
             failed += 1
-    
-    print(f"\n📊 Test Results: {passed} passed, {failed} failed")
+
+    print(f"\n Test Results: {passed} passed, {failed} failed")

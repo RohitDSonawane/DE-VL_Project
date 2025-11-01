@@ -5,7 +5,7 @@
 
 ---
 
-## 📄 Original Columns (Raw CSV)
+##  Original Columns (Raw CSV)
 
 ### From `data/raw/startup_funding.csv`
 
@@ -30,7 +30,7 @@
 
 ---
 
-## 🔧 Derived Columns (After Cleaning)
+## Derived Columns (After Cleaning)
 
 ### Created in `notebooks/2_data_cleaning.ipynb`
 
@@ -52,7 +52,7 @@
 
 ---
 
-## 🎯 Engineered Features (Feature Engineering)
+##  Engineered Features (Feature Engineering)
 
 ### Created in `notebooks/4_feature_engineering.ipynb`
 
@@ -71,7 +71,7 @@
 
 ---
 
-## 🔢 Target Variables
+##  Target Variables
 
 ### For Predictive Modeling
 
@@ -84,7 +84,7 @@
 
 ---
 
-## 📊 Data Quality Metrics
+##  Data Quality Metrics
 
 | Metric | Value | Note |
 |--------|-------|------|
@@ -93,11 +93,11 @@
 | Missing Amounts | ~12% | Handle via median imputation or removal |
 | Missing Stages | ~10% | Map to "Undisclosed" |
 | Duplicate Rows | TBD | Check in cleaning notebook |
-| Outliers (Amount) | ~3% | Amounts > ₹500 Cr may be outliers |
+| Outliers (Amount) | ~3% | Amounts > Rs.500 Cr may be outliers |
 
 ---
 
-## 🔍 Key Statistics (Post-Cleaning)
+##  Key Statistics (Post-Cleaning)
 
 **Will be populated after running `notebooks/2_data_cleaning.ipynb`**
 
@@ -111,7 +111,7 @@ df.groupby('Year')['Amount_Crores'].sum()
 
 ---
 
-## 📝 Column Usage Guide
+##  Column Usage Guide
 
 ### For EDA (Phase 3)
 - Use: `Year`, `City_Clean`, `Industry Vertical`, `Stage`, `Amount_Crores`
@@ -128,7 +128,7 @@ df.groupby('Year')['Amount_Crores'].sum()
 
 ---
 
-## 🛠️ Maintenance
+##  Maintenance
 
 **Update this dictionary when:**
 - Adding new derived columns
