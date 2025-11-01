@@ -58,44 +58,48 @@ def map_investment_type(inv_type):
     if "pre-series a" in v or "pre series a" in v:
         return ("Pre-Series A", 4)
     
-    # Series rounds (A through H)
+    # Series rounds (A through Z, anything D+ is late stage)
     series_patterns = {
         r'\bseries\s*a\b': ("Series A", 5),
         r'\bseries\s*b\b': ("Series B", 6),
         r'\bseries\s*c\b': ("Series C", 7),
-        r'\bseries\s*d\b': ("Series D+", 8),
-        r'\bseries\s*e\b': ("Series D+", 8),
-        r'\bseries\s*f\b': ("Series D+", 8),
-        r'\bseries\s*g\b': ("Series D+", 8),
-        r'\bseries\s*h\b': ("Series D+", 8),
+        r'\bseries\s*[d-z]\b': ("Series D+", 8),  # Matches D through Z
     }
     
     for pattern, (name, order) in series_patterns.items():
         if re.search(pattern, v):
             return (name, order)
     
-    # Private Equity
-    if "private equity" in v or "pe round" in v:
+    # Private Equity (with variations)
+    if any(word in v for word in ["private equity", "private\nequity", "privateequity", "pe round", "private"]):
         return ("Private Equity", 9)
     
     # Corporate Round
     if "corporate" in v:
         return ("Corporate Round", 10)
     
-    # Debt Funding
-    if "debt" in v:
+    # Debt Funding (including term loans)
+    if any(word in v for word in ["debt", "term loan", "loan"]):
         return ("Debt Funding", 11)
+    
+    # Equity/Equity-based funding (general)
+    if any(word in v for word in ["equity", "mezzanine"]):
+        return ("Private Equity", 9)
+    
+    # Bridge rounds (typically late-stage)
+    if "bridge" in v:
+        return ("Series D+", 8)
     
     # Undisclosed/Unknown
     if any(word in v for word in ["unknown", "undisclosed", "nan", "none", "not disclosed"]):
         return ("Undisclosed", 0)
     
-    # Ambiguous cases (Venture, Funding Round, etc.)
-    if any(word in v for word in ["venture", "funding round", "funding", "round"]):
-        return ("Other", -1)
+    # Generic venture/funding rounds (map to Undisclosed since stage unclear)
+    if any(word in v for word in ["venture", "funding round", "funding", "round", "maiden"]):
+        return ("Undisclosed", 0)
     
     # Default for unmatched
-    return ("Other", -1)
+    return ("Undisclosed", 0)
 
 
 def apply_stage_mapping(df, inv_type_column='InvestmentnType'):
