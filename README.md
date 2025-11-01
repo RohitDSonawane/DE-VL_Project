@@ -1,11 +1,11 @@
-# 🚀 Indian Startup Funding Analysis (2015-2020)
+# Indian Startup Funding Analysis (2015-2020)
 
 **2nd-Year BTech Mini-Project**  
 **Predictive Modeling | Regression | Machine Learning**
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 
 This project analyzes **3,036 Indian startup funding records** from 2015-2020 to predict funding amounts using machine learning. Implements a complete data science pipeline from data cleaning to model deployment.
 
@@ -18,7 +18,7 @@ This project analyzes **3,036 Indian startup funding records** from 2015-2020 to
 
 ---
 
-## 🏗️ Repository Structure
+## Repository Structure
 
 ```
 startup_funding_project/
@@ -60,7 +60,7 @@ startup_funding_project/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8+ (tested on 3.13.6)
@@ -91,14 +91,14 @@ jupyter notebook
 
 ---
 
-## 📊 Key Features
+## Key Features
 
 ### Data Pipeline
-- ✅ **3,036 funding records** (2015-2020)
-- ✅ **12 funding stages** (Seed → Series D+)
-- ✅ **108 cities** (categorized into Metro/Tier-2/Other)
-- ✅ **10 industry categories** (E-commerce, Fintech, Technology, etc.)
-- ✅ **8 core features** (no over-engineering)
+- **3,036 funding records** (2015-2020)
+- **12 funding stages** (Seed → Series D+)
+- **108 cities** (categorized into Metro/Tier-2/Other)
+- **10 industry categories** (E-commerce, Fintech, Technology, etc.)
+- **8 core features** (no over-engineering)
 
 ### Model Performance
 | Model | R² Score | RMSE | MAE |
@@ -115,11 +115,11 @@ jupyter notebook
 
 ---
 
-## 📈 Key Insights
+## Key Insights
 
 ### 1. **Stage Overwhelmingly Dominates Funding**
 - Accounts for 82% of predictive power
-- Exponential growth: Seed (₹35L) → Series A (₹8.5Cr) → Series C (₹75Cr)
+- Exponential growth: Seed (Rs. 35L) → Series A (Rs. 8.5Cr) → Series C (Rs. 75Cr)
 
 ### 2. **Geographic Concentration**
 - Bangalore, Mumbai, Delhi = 62% of all funding
@@ -139,7 +139,7 @@ jupyter notebook
 
 ---
 
-## 📁 Outputs
+## Outputs
 
 ### Visualizations (6 plots)
 - `yearly_trends.html` - Interactive funding timeline
@@ -160,7 +160,66 @@ jupyter notebook
 
 ---
 
-## 🔍 Model Limitations
+## Testing the Model
+
+### Option 1: Python Script (Recommended)
+```bash
+# Interactive testing
+python scripts/test_model.py
+```
+
+**Features:**
+- Test with 3 pre-built example scenarios
+- Test with custom CSV file (`data/test_data.csv`)
+- Interactive mode - enter values manually
+- Feature encoding guide included
+
+### Option 2: Jupyter Notebook
+Open `notebooks/6_test_model.ipynb` for interactive testing with examples and visualizations.
+
+### Option 3: Python Code
+```python
+import pickle
+import pandas as pd
+import numpy as np
+
+# Load model
+with open('models/best_regressor.pkl', 'rb') as f:
+    model = pickle.load(f)
+
+# Create test input
+test_input = {
+    'Year': 2020,
+    'Month': 6,
+    'Quarter': 2,
+    'Stage_Order': 5,  # Series A
+    'Investor_Count': 2,
+    'City_Category_Encoded': 0,  # Metro
+    'Industry_Category_Encoded': 9,  # Technology
+    'Has_Multiple_Investors': 1
+}
+
+# Make prediction
+df_test = pd.DataFrame([test_input])
+prediction_log = model.predict(df_test)[0]
+prediction_amount = np.exp(prediction_log)
+
+print(f"Predicted Funding: Rs. {prediction_amount/10000000:.2f} Crores")
+```
+
+### Feature Encoding Reference:
+| Feature | Values |
+|---------|--------|
+| **Stage_Order** | 0=Angel, 2=Seed, 4=Pre-A, 5=A, 6=B, 7=C, 9=PE |
+| **City_Category** | 0=Metro, 1=Other, 2=Tier-2, 3=Unknown |
+| **Industry** | 0=Consumer, 1=Ecom, 3=Fintech, 9=Tech |
+| **Has_Multiple_Investors** | 0=No, 1=Yes |
+
+**Sample test data provided in:** `data/test_data.csv`
+
+---
+
+## Model Limitations
 
 1. **R² = 0.58** - Explains 58% variance (strong performance, but 42% unexplained)
 2. **Missing Features** - Founder profiles, traction metrics, product maturity not captured
@@ -169,7 +228,7 @@ jupyter notebook
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - Collect post-2020 data (pandemic impact, unicorn boom)
 - Add founder profiles (education, experience, network)
@@ -179,7 +238,7 @@ jupyter notebook
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Language:** Python 3.13.6
 - **Data:** Pandas, NumPy
@@ -189,7 +248,7 @@ jupyter notebook
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 ### Main Documents
 - **[EXECUTION_SUMMARY.md](EXECUTION_SUMMARY.md)** - Comprehensive technical results (6 pages)
@@ -201,14 +260,14 @@ jupyter notebook
 - **[docs/STAGE_DEFINITIONS.md](docs/STAGE_DEFINITIONS.md)** - Funding stage taxonomy (12 stages)
 
 ### Quick Links
-- 🚀 **New to the project?** Start with [README.md](README.md) (this file)
-- 📊 **Want results?** Read [EXECUTION_SUMMARY.md](EXECUTION_SUMMARY.md)
-- ⚡ **Need quick facts?** Check [KEY_INFERENCES.md](KEY_INFERENCES.md)
-- 📖 **Want full story?** See [PROJECT_DOCUMENTATION.md](PROJECT_DOCUMENTATION.md)
+- **New to the project?** Start with [README.md](README.md) (this file)
+- **Want results?** Read [EXECUTION_SUMMARY.md](EXECUTION_SUMMARY.md)
+- **Need quick facts?** Check [KEY_INFERENCES.md](KEY_INFERENCES.md)
+- **Want full story?** See [PROJECT_DOCUMENTATION.md](PROJECT_DOCUMENTATION.md)
 
 ---
 
-## 👥 Contributors
+## Contributors
 
 - **Project Lead:** [Your Name]
 - **Institution:** [Your College]
@@ -223,7 +282,7 @@ This project is for educational purposes as part of a 2nd-year BTech mini-projec
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Dataset sourced from publicly available Indian startup funding records
 - Guidance from faculty advisors and department mentors
@@ -231,7 +290,7 @@ This project is for educational purposes as part of a 2nd-year BTech mini-projec
 
 ---
 
-## 📧 Contact
+## Contact
 
 For questions or collaboration:
 - **Email:** [rajedipaksonawane245@gmail.com]
@@ -241,4 +300,4 @@ For questions or collaboration:
 ---
 
 **Last Updated:** November 1, 2025  
-**Status:** ✅ Complete 
+**Status:** Complete 
