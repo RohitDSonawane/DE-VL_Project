@@ -234,11 +234,11 @@ This project is for educational purposes as part of a 2nd-year BTech mini-projec
 ## 📧 Contact
 
 For questions or collaboration:
-- **Email:** [your.email@example.com]
-- **GitHub:** [your-github-username]
-- **LinkedIn:** [your-linkedin-profile]
+- **Email:** [rajedipaksonawane245@gmail.com]
+- **GitHub:** [RohitDSonawane]
+- **LinkedIn:** [rohit-sonawane245]
 
 ---
 
 **Last Updated:** November 1, 2025  
-**Status:** ✅ Complete (Simplified for 2nd-year scope)
+**Status:** ✅ Complete 
