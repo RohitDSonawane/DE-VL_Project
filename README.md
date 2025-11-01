@@ -251,26 +251,28 @@ print(f"Predicted Funding: Rs. {prediction_amount/10000000:.2f} Crores")
 ## Documentation
 
 ### Main Documents
-- **[EXECUTION_SUMMARY.md](EXECUTION_SUMMARY.md)** - Comprehensive technical results (6 pages)
-- **[KEY_INFERENCES.md](KEY_INFERENCES.md)** - Quick reference cheatsheet (1 page)
-- **[PROJECT_DOCUMENTATION.md](PROJECT_DOCUMENTATION.md)** - Complete project journey (15 pages)
+- **[EXECUTION_SUMMARY.md](startup_funding_project/EXECUTION_SUMMARY.md)** - Comprehensive technical results (6 pages)
+- **[KEY_INFERENCES.md](startup_funding_project/KEY_INFERENCES.md)** - Quick reference cheatsheet (1 page)
+- **[PROJECT_DOCUMENTATION.md](startup_funding_project/PROJECT_DOCUMENTATION.md)** - Complete project journey (15 pages)
 
 ### Reference Documents
-- **[docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md)** - Column definitions and data types
-- **[docs/STAGE_DEFINITIONS.md](docs/STAGE_DEFINITIONS.md)** - Funding stage taxonomy (12 stages)
+- **[DATA_DICTIONARY.md](startup_funding_project/docs/DATA_DICTIONARY.md)** - Column definitions and data types
+- **[STAGE_DEFINITIONS.md](startup_funding_project/docs/STAGE_DEFINITIONS.md)** - Funding stage taxonomy (12 stages)
+- **[MODEL_TESTING_GUIDE.md](startup_funding_project/docs/MODEL_TESTING_GUIDE.md)** - Step-by-step testing instructions
 
 ### Quick Links
-- **New to the project?** Start with [README.md](README.md) (this file)
-- **Want results?** Read [EXECUTION_SUMMARY.md](EXECUTION_SUMMARY.md)
-- **Need quick facts?** Check [KEY_INFERENCES.md](KEY_INFERENCES.md)
-- **Want full story?** See [PROJECT_DOCUMENTATION.md](PROJECT_DOCUMENTATION.md)
+- **New to the project?** Start with [README.md](startup_funding_project/README.md) (this file)
+- **Want results?** Read [EXECUTION_SUMMARY.md](startup_funding_project/EXECUTION_SUMMARY.md)
+- **Need quick facts?** Check [KEY_INFERENCES.md](startup_funding_project/KEY_INFERENCES.md)
+- **Want full story?** See [PROJECT_DOCUMENTATION.md](startup_funding_project/PROJECT_DOCUMENTATION.md)
+- **Testing guide?** See [MODEL_TESTING_GUIDE.md](startup_funding_project/docs/MODEL_TESTING_GUIDE.md)
 
 ---
 
 ## Contributors
 
-- **Project Lead:** [Your Name]
-- **Institution:** [Your College]
+- **Project Lead:** [Rohit Sonawane]
+- **Institution:** [PCCOE]
 - **Department:** Computer Engineering / Data Science
 - **Academic Year:** 2024-2025 (2nd Year BTech)
 
