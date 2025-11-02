@@ -7,12 +7,12 @@
 
 ## Project Overview
 
-This project analyzes **3,036 Indian startup funding records** from 2015-2020 to predict funding amounts using machine learning. Implements a complete data science pipeline from data cleaning to model deployment.
+This project analyzes **3,036 Indian startup funding records** from 2015-2020 to predict funding amounts using machine learning. We built a complete pipeline from data cleaning to model training.
 
-**Key Objectives:**
-- Predict funding amounts based on stage, geography, industry, and investor count
-- Identify key drivers of funding through feature importance analysis
-- Provide actionable insights for startups and investors
+**What We're Trying to Do:**
+- Predict funding amounts based on stage, location, industry, and investor count
+- Find out which factors matter most for getting funding
+- Build a working model that can predict amounts reasonably well
 
 **Models Used:** Linear Regression (baseline) + Random Forest (best: R² = 0.58)
 
@@ -219,22 +219,21 @@ print(f"Predicted Funding: Rs. {prediction_amount/10000000:.2f} Crores")
 
 ---
 
-## Model Limitations
+## Limitations
 
-1. **R² = 0.58** - Explains 58% variance (strong performance, but 42% unexplained)
-2. **Missing Features** - Founder profiles, traction metrics, product maturity not captured
-3. **Temporal Scope** - 2015-2020 data may not generalize to post-pandemic era
-4. **Simplified Features** - No cyclical encoding, no interaction terms (kept simple for 2nd-year)
-
+1. **R² = 0.58** - The model explains 58% of the variance, which is decent but there's still 42% we can't explain
+2. **Missing Data** - We don't have info about founders, traction metrics, or product maturity
+3. **Time Period** - Our data is from 2015-2020, so it might not work as well for newer startups
+4. **Simple Features** - We only used 8 basic features to keep it manageable
 ---
 
-## Future Enhancements
+## What We Could Improve
 
-- Collect post-2020 data (pandemic impact, unicorn boom)
-- Add founder profiles (education, experience, network)
-- Include traction metrics (revenue, users, growth rate)
-- Advanced feature engineering (interactions, cyclical encoding) to reach R² > 0.65
-- Implement time series forecasting for trend prediction
+- Get newer data from 2021-2025 (post-pandemic trends)
+- Add founder info (education, experience, previous startups)
+- Include traction data (revenue, user count, growth rate)
+- Try more complex features or tune the Random Forest parameters better
+- Test other models like XGBoost if we can get them working
 
 ---
 
@@ -251,55 +250,46 @@ print(f"Predicted Funding: Rs. {prediction_amount/10000000:.2f} Crores")
 ## Documentation
 
 ### Main Documents
-- **[EXECUTION_SUMMARY.md](startup_funding_project/EXECUTION_SUMMARY.md)** - Comprehensive technical results (6 pages)
-- **[KEY_INFERENCES.md](startup_funding_project/KEY_INFERENCES.md)** - Quick reference cheatsheet (1 page)
-- **[PROJECT_DOCUMENTATION.md](startup_funding_project/PROJECT_DOCUMENTATION.md)** - Complete project journey (15 pages)
+- **[EXECUTION_SUMMARY.md](startup_funding_project/EXECUTION_SUMMARY.md)** - Technical results and findings (6 pages)
+- **[KEY_INFERENCES.md](startup_funding_project/KEY_INFERENCES.md)** - Quick summary of key results (1 page)
+- **[PROJECT_DOCUMENTATION.md](startup_funding_project/PROJECT_DOCUMENTATION.md)** - Full project details (15 pages)
 
 ### Reference Documents
-- **[DATA_DICTIONARY.md](startup_funding_project/docs/DATA_DICTIONARY.md)** - Column definitions and data types
-- **[STAGE_DEFINITIONS.md](startup_funding_project/docs/STAGE_DEFINITIONS.md)** - Funding stage taxonomy (12 stages)
-- **[MODEL_TESTING_GUIDE.md](startup_funding_project/docs/MODEL_TESTING_GUIDE.md)** - Step-by-step testing instructions
+- **[DATA_DICTIONARY.md](startup_funding_project/docs/DATA_DICTIONARY.md)** - What each column means
+- **[STAGE_DEFINITIONS.md](startup_funding_project/docs/STAGE_DEFINITIONS.md)** - All 12 funding stages explained
+- **[MODEL_TESTING_GUIDE.md](startup_funding_project/docs/MODEL_TESTING_GUIDE.md)** - How to test the model
 
-### Quick Links
-- **New to the project?** Start with [README.md](startup_funding_project/README.md) (this file)
-- **Want results?** Read [EXECUTION_SUMMARY.md](startup_funding_project/EXECUTION_SUMMARY.md)
-- **Need quick facts?** Check [KEY_INFERENCES.md](startup_funding_project/KEY_INFERENCES.md)
-- **Want full story?** See [PROJECT_DOCUMENTATION.md](startup_funding_project/PROJECT_DOCUMENTATION.md)
-- **Testing guide?** See [MODEL_TESTING_GUIDE.md](startup_funding_project/docs/MODEL_TESTING_GUIDE.md)
-
----
-
-## Contributors
-
-- **Project Lead:** [Rohit Sonawane]
-- **Institution:** [PCCOE]
-- **Department:** Computer Engineering / Data Science
-- **Academic Year:** 2024-2025 (2nd Year BTech)
+### Where to Start
+- **New here?** Read this file first (README.md)
+- **Want to see results?** Check [EXECUTION_SUMMARY.md](startup_funding_project/EXECUTION_SUMMARY.md)
+- **Need quick facts?** See [KEY_INFERENCES.md](startup_funding_project/KEY_INFERENCES.md)
+- **Want full details?** Read [PROJECT_DOCUMENTATION.md](startup_funding_project/PROJECT_DOCUMENTATION.md)
+- **Testing the model?** Follow [MODEL_TESTING_GUIDE.md](startup_funding_project/docs/MODEL_TESTING_GUIDE.md)
 
 ---
 
-## 📄 License
+## Project Team
 
-This project is for educational purposes as part of a 2nd-year BTech mini-project.
+- **Made by:** Rohit Sonawane
+- **College:** PCCOE
+- **Department:** Computer Engineering
+- **Year:** 2nd Year BTech (2024-2025)
 
 ---
 
-## Acknowledgments
+## License
 
-- Dataset sourced from publicly available Indian startup funding records
-- Guidance from faculty advisors and department mentors
-- Inspiration from Kaggle startup analysis competitions
+This is a college mini-project for educational purposes.
 
 ---
 
 ## Contact
 
-For questions or collaboration:
-- **Email:** [rajedipaksonawane245@gmail.com]
-- **GitHub:** [RohitDSonawane]
-- **LinkedIn:** [rohit-sonawane245]
+For questions:
+- **Email:** rajedipaksonawane245@gmail.com
+- **GitHub:** RohitDSonawane
+- **LinkedIn:** rohit-sonawane245
 
 ---
 
-**Last Updated:** November 1, 2025  
-**Status:** Complete 
+**Last Updated:** November 2, 2025 

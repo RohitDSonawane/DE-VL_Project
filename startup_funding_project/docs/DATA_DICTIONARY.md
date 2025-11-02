@@ -1,13 +1,13 @@
 # Data Dictionary
 
-**Project:** Predictive Analysis of Indian Startup Funding (2015-2020)  
-**Purpose:** Comprehensive documentation of all data columns (original and derived)
+**Project:** Predicting Indian Startup Funding (2015-2020)  
+**Purpose:** Explains what each column means (original and new ones we created)
 
 ---
 
-##  Original Columns (Raw CSV)
+## Original Columns (From Raw CSV)
 
-### From `data/raw/startup_funding.csv`
+### In `data/raw/startup_funding.csv`
 
 | Column Name | Data Type | Description | Example Values | Missing Values |
 |-------------|-----------|-------------|----------------|----------------|
@@ -30,9 +30,9 @@
 
 ---
 
-## Derived Columns (After Cleaning)
+## New Columns (We Created These)
 
-### Created in `notebooks/2_data_cleaning.ipynb`
+### Made in `notebooks/2_data_cleaning.ipynb`
 
 | Column Name | Data Type | Description | Transformation Logic | Range/Values |
 |-------------|-----------|-------------|---------------------|--------------|
@@ -52,28 +52,24 @@
 
 ---
 
-##  Engineered Features (Feature Engineering)
+## Features for Machine Learning
 
-### Created in `notebooks/4_feature_engineering.ipynb`
+### Made in `notebooks/4_feature_engineering.ipynb`
 
 | Column Name | Data Type | Description | Formula/Logic | Purpose |
 |-------------|-----------|-------------|---------------|---------|
-| `Is_Metro` | Binary (0/1) | Metro city indicator | 1 if City_Category=="Metro", else 0 | Classification feature |
+| `Stage_Order` | Integer | Ordered funding stage | 0=Seed, 1=Pre-A, 2=A, 3=B, 4=C+ | Most important predictor (81.8%) |
 | `Has_Multiple_Investors` | Binary (0/1) | Multiple investor flag | 1 if Investor_Count > 1, else 0 | Risk diversification indicator |
-| `Year_Since_2015` | Integer | Years since dataset start | `Year - 2015` | Temporal trend feature |
-| `Month_Sin` | Float | Cyclical month encoding | `sin(2π × Month/12)` | Seasonal patterns |
-| `Month_Cos` | Float | Cyclical month encoding | `cos(2π × Month/12)` | Seasonal patterns |
-| `Industry_Encoded` | Integer | Label-encoded industry | Scikit-learn LabelEncoder | ML feature |
-| `City_Encoded` | Integer | Label-encoded city | Scikit-learn LabelEncoder | ML feature |
-| `Stage_Industry_Interaction` | String | Combined feature | `Stage + "_" + Industry` | Interaction term |
-| `Amount_Per_Investor` | Float | Avg amount per investor | `Amount_Lakhs / Investor_Count` | Investment concentration |
-| `Is_High_Value` | Binary (0/1) | Large funding flag | 1 if Amount_Crores > 50, else 0 | Outlier indicator |
+| `City_Category_Encoded` | Integer | Metro vs non-metro | 0=Non-Metro, 1=Metro | Geographic feature |
+| `Industry_Category_Encoded` | Integer | Industry sector encoding | Label-encoded categories | Sector variations |
+| `Is_High_Funding` | Binary (0/1) | Large funding flag | 1 if Amount_Crores > median, else 0 | Classification target |
+| `Funding_Per_Investor` | Float | Avg amount per investor | `Funding_Amount_Log / Investor_Count` | Investment concentration |
 
 ---
 
-##  Target Variables
+## What We're Predicting
 
-### For Predictive Modeling
+### Target Variables
 
 | Variable | Type | Task | Description | Distribution |
 |----------|------|------|-------------|--------------|
@@ -84,7 +80,7 @@
 
 ---
 
-##  Data Quality Metrics
+## Data Quality
 
 | Metric | Value | Note |
 |--------|-------|------|
@@ -97,9 +93,7 @@
 
 ---
 
-##  Key Statistics (Post-Cleaning)
-
-**Will be populated after running `notebooks/2_data_cleaning.ipynb`**
+## Key Statistics (After Cleaning)
 
 ```python
 # Example statistics to compute:
