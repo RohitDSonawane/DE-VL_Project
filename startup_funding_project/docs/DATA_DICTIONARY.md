@@ -84,7 +84,8 @@
 
 | Metric | Value | Note |
 |--------|-------|------|
-| Total Rows | ~3,044 | After removing header |
+| Total Rows (raw) | 3,044 | Rows in the original CSV (before cleaning) |
+| Cleaned Rows | 3,036 | Records after cleaning and imputation (used for modeling) |
 | Date Range | 2015-2020 | Confirmed from terminal profiling |
 | Missing Amounts | ~12% | Handle via median imputation or removal |
 | Missing Stages | ~10% | Map to "Undisclosed" |

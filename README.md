@@ -7,7 +7,7 @@
 
 ## Project Overview
 
-This project analyzes **3,036 Indian startup funding records** from 2015-2020 to predict funding amounts using machine learning. We built a complete pipeline from data cleaning to model training.
+This project analyzes **3,036 Indian startup funding records** from 2015-2020 to predict funding amounts using machine learning. (Raw CSV: 3,044 rows; 3,036 records remain after cleaning.) We built a complete pipeline from data cleaning to model training.
 
 **What We're Trying to Do:**
 - Predict funding amounts based on stage, location, industry, and investor count
@@ -24,8 +24,8 @@ This project analyzes **3,036 Indian startup funding records** from 2015-2020 to
 startup_funding_project/
 │
 ├── data/                        # Datasets
-│   ├── startup_funding.csv      # Raw data (3,044 records)
-│   ├── startup_funding_clean.csv    # Cleaned data
+│   ├── startup_funding.csv      # Raw data (3,044 rows) — cleaned to 3,036 usable records
+│   ├── startup_funding_clean.csv    # Cleaned data (3,036 rows)
 │   └── processed_features.csv   # Feature-engineered data
 │
 ├── notebooks/                   # Jupyter notebooks (run in order)

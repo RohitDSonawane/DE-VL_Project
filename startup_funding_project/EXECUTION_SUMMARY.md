@@ -8,7 +8,7 @@
 
 ## Summary
 
-We analyzed **3,036 Indian startup funding records** from 2015-2020 using machine learning. Built models to predict funding amounts using 8 features: stage, location, industry, and investor count.
+We analyzed **3,036 Indian startup funding records** from 2015-2020 using machine learning. Built models to predict funding amounts using 8 core features: stage, location, industry, and investor count.
 
 **Main Result:** Random Forest model achieves **R² = 0.58**, which means it explains 58% of the variation in funding amounts.
 
@@ -236,7 +236,7 @@ We analyzed **3,036 Indian startup funding records** from 2015-2020 using machin
 - [x] Loaded and inspected the data
 - [x] Cleaned and transformed 3,036 records
 - [x] Did exploratory data analysis
-- [x] Created 8 features
+- [x] Created 8 core features
 - [x] Built Linear Regression (baseline)
 - [x] Built Random Forest (better model)
 - [x] Compared models

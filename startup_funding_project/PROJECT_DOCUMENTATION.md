@@ -27,7 +27,7 @@ Build a model to predict Indian startup funding amounts from 2015-2020, and figu
 ### What We Wanted to Do
 - Clean up 3,036 startup funding records
 - Understand the data through analysis
-- Create 8 features for machine learning
+- Create 8 core features for machine learning
 - Build prediction models (Linear Regression + Random Forest)
 - Find out what drives funding amounts
 
@@ -332,7 +332,7 @@ This is a **2nd-Year BTech Mini-Project** - we kept it simple and focused on the
 **What We Delivered:**
 - Cleaned dataset (3,036 records)
 - 6 visualizations
-- 8 features
+- 8 core features
 - 2 models (Linear Regression + Random Forest)
 - Feature importance analysis
 - Documentation (4 markdown files)

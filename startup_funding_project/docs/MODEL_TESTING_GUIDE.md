@@ -243,7 +243,7 @@ amount_crores = actual_amount / 10_000_000
 **Solution:** Update scikit-learn: `pip install --upgrade scikit-learn`
 
 ### Issue: Missing features error
-**Solution:** Ensure all 8 features are present in exact order:
+**Solution:** Ensure all 8 core features are present in exact order:
 ```python
 ['Year', 'Month', 'Quarter', 'Stage_Order', 'Investor_Count',
  'City_Category_Encoded', 'Industry_Category_Encoded', 'Has_Multiple_Investors']
@@ -331,4 +331,4 @@ Stage is everything! It explains 82% of funding variance. Other factors matter, 
 ---
 
 **Last Updated:** November 1, 2025  
-**Model Version:** Random Forest (v1.0) - Trained on 3,044 records
+**Model Version:** Random Forest (v1.0) - Trained on cleaned dataset (3,036 records)

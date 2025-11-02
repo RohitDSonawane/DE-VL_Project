@@ -199,7 +199,7 @@ Typical progression:
 
 1. **Feature Importance** (`visuals/eda/feature_importance.png`)
    - Stage_Order dominates with 81.8% importance
-   - Shows clear ranking of all 8 features
+   - Shows clear ranking of all 8 core features
 
 2. **Model Comparison** (`visuals/eda/model_comparison.png`)
    - Random Forest (R²=0.584) vs Linear Regression (R²=0.557)
