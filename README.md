@@ -1,3 +1,4 @@
+![Project Banner](startup_funding_project/visuals/eda/rf_feature_importance.png)
 # Indian Startup Funding Analysis (2015-2020)
 
 **2nd-Year BTech Mini-Project**  
